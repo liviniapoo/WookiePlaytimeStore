@@ -1,14 +1,59 @@
+/**************************
+      Universal Styles
+**************************/ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #EFE6E1;
 }
 
-/***Navigation Styles***/
-.navcontainer{
-    background-color: #99B2dd;
-    width: 100%;
-    height: auto;
+/**************************
+       Header Styles
+**************************/ 
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+    background-color: #99B1DD;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .logo{
-    height: 150px;
+    font-family: 'Rubik Puddles', system-ui;
+    font-size: 50px;
+    color: #EFE6E1;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Single Day', cursive;
+    font-size:25px;
+}
+
+a{
+    text-decoration: none;
+    color: #EFE6E1
+    ;
 }
