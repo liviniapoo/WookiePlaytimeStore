@@ -100,3 +100,22 @@ p{
 .btn:hover{
     background: #DBB8B2;
 }
+
+/**************************
+        Shop Styles
+**************************/ 
+.cardcontainer{
+    max-width: 100px;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.card-title{
+    font-family: 'Rubik Puddles', system-ui;
+    font-size: 30px;
+}
+
+.card-text{
+    font-family: 'Single Day', cursive;
+    font-size:15px;
+}
