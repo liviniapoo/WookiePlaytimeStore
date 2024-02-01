@@ -48,7 +48,7 @@ nav ul li{
     display: inline-block;
     margin-right: 20px;
     font-family: 'Single Day', cursive;
-    font-size:25px;
+    font-size:22px;
 }
 
 a{
@@ -104,18 +104,3 @@ p{
 /**************************
         Shop Styles
 **************************/ 
-.cardcontainer{
-    max-width: 100px;
-    margin: 5px;
-    flex-wrap: wrap;
-}
-
-.card-title{
-    font-family: 'Rubik Puddles', system-ui;
-    font-size: 30px;
-}
-
-.card-text{
-    font-family: 'Single Day', cursive;
-    font-size:15px;
-}
