@@ -20,6 +20,10 @@ body{
     padding: 0 25px;
 }
 
+.header{
+    background-color: #99B1DD;
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -30,7 +34,7 @@ body{
 .logo{
     font-family: 'Rubik Puddles', system-ui;
     font-size: 50px;
-    color: #99B1DD;
+    color: #EFE6E1;
 }
 
 nav{
@@ -53,7 +57,7 @@ nav ul li{
 
 a{
     text-decoration: none;
-    color: #99B1DD;
+    color: #EFE6E1;
 }
 
 .profileiconimg{
@@ -219,4 +223,76 @@ h4{
 
 input:focus{
     outline: none;
+}
+
+/********************
+    SL Page Styles
+********************/ 
+.account-page{
+    padding: 50px 0;
+}
+
+.form-container{
+    background-color: #A87363;
+    width: 40vw;
+    height: 30vw;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    width: 40vw;
+    padding: 0 20px;
+    position: absolute;
+    top: 10vw;
+    transition: transform 1s;
+}
+
+form.btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form.btn:focus{
+    outline: none;
+}
+
+form a{
+    padding: 1vw
+}
+
+#SignupForm{
+    left: 0;
+}
+
+#LoginForm{
+    left: -50vw;
+}
+
+#indicator{
+    width: 17vw;
+    background-color: #F2EADF;
+    border: none;
+    height: 0.5vh;
+    margin-top: 8px;
+    transform: translateX(15.5vw);
+    transition: transform 1s;
 }
