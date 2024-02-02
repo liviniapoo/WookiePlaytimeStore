@@ -8,11 +8,6 @@
 		/>
 		<title>Kookie Plushie</title>
 		<link
-			rel="stylesheet"
-			href="style.css"
-			type="text/css"
-		/>
-		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com"
 		/>
@@ -30,6 +25,11 @@
 			rel="stylesheet"
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+			type="text/css"
 		/>
 	</head>
 	<body>
@@ -55,7 +55,9 @@
 									>Products</a
 								>
 							</li>
-							<li><a href="about.html">About</a></li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
 							<li>
 								<a href="profile.html">Account</a>
 							</li>
@@ -73,9 +75,69 @@
 		<!------------End of Header Section------------>
 
 		<!------------Body Section------------>
+		<div class="detail-container">
+			<div id="carouselExample" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="carousel-item-container">
+						<div class="carousel-item active">
+							<img src="slothtoy-front.png" class="d-block custom-carousel-img" alt="KookieToy" />
+							<!-- Move the prev/next buttons inside the carousel item -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+								&lt;
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+								&gt;
+							</button>
+						</div>
+						<div class="carousel-item">
+							<img src="slothtoy-angled.png" class="d-block custom-carousel-img" alt="KookieToy" />
+							<!-- Repeat the buttons for each carousel item -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+								&lt;
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+								&gt;
+							</button>
+						</div>
+						<div class="carousel-item">
+							<div class="sketchfab-embed-wrapper">
+								<iframe title="Kookie the Sloth" frameborder="0" allowfullscreen
+									src="https://sketchfab.com/models/0b62b3e3257f416582c34c7db4e61f70/embed?autospin=1"></iframe>
+								<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4a4a4a;">
+									<a href="https://sketchfab.com/3d-models/kookie-the-sloth-0b62b3e3257f416582c34c7db4e61f70?utm_medium=embed&utm_campaign=share-popup&utm_content=0b62b3e3257f416582c34c7db4e61f70"
+										target="_blank" rel="nofollow" style="font-weight: bold; color: #1caad9;">
+										Kookie the Sloth
+									</a> by
+									<a href="https://sketchfab.com/liviniapoo?utm_medium=embed&utm_campaign=share-popup&utm_content=0b62b3e3257f416582c34c7db4e61f70"
+										target="_blank" rel="nofollow" style="font-weight: bold; color: #1caad9;">
+										liviniapoo
+									</a> on
+									<a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=0b62b3e3257f416582c34c7db4e61f70"
+										target="_blank" rel="nofollow" style="font-weight: bold; color: #1caad9;">Sketchfab</a>
+								</p>
+							</div>
+							<!-- Repeat the buttons for each carousel item -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+								&lt;
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+								&gt;
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
-
-		
+			<div class="information-container">
+				<h2>Kookie the Sloth</h2>
+				<p>A mascot of our company, Ko</p>
+			</div>
+		</div>
 		<!------------End of Body Section------------>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>

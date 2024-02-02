@@ -148,3 +148,38 @@ h4{
 .col-4 p{
     font-size: 20px;
 }
+
+/*****************************
+    Sloth Plush Page Styles
+*****************************/ 
+.detail-container{
+    width: 100%;
+}
+
+.carousel-item-container{
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.custom-carousel-img{
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item{
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    width: 5%;
+    transform: translateY(-50%);
+    color: #7A5946;
+    background: none;
+    border: none;
+    font-size: 50px;
+    font-style: bold;
+}
