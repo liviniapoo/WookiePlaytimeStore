@@ -153,22 +153,31 @@ h4{
     Sloth Plush Page Styles
 *****************************/ 
 .detail-container{
-    width: 100%;
+    display:flex;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 25px;
 }
 
 .carousel-item-container{
     position: relative;
-    width: 50%;
+    width: 100%;
     float: left;
 }
 
 .custom-carousel-img{
-    width: 100%;
-    height: auto;
+    width: 50vw;
+    height: 60vw;
 }
 
 .carousel-item{
     position: relative;
+}
+
+.sketchfab-embed-wrapper{
+    width: 50vw;
+    height: 60vw;
 }
 
 .carousel-control-prev,
@@ -182,4 +191,28 @@ h4{
     border: none;
     font-size: 50px;
     font-style: bold;
+}
+
+.information-container{
+    position: relative;
+    width: 50%;
+    float: right;
+    padding-left: 20px;
+}
+
+.information-container h3{
+    margin: 20px 0;
+}
+
+.information-container input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 1px solid #C9A195;
+}
+
+input:focus{
+    outline: none;
 }
