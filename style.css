@@ -102,5 +102,49 @@ p{
 }
 
 /**************************
-        Shop Styles
+    Products Styles
 **************************/ 
+.small-container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto 50px;
+}
+
+.productspage-title{
+    margin: 0;
+}
+
+select{
+    border: 1px solid #C9A195;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+h4{
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 20px;
+}
