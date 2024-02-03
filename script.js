@@ -69,24 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const APIKEY = "65be00693339b174e873c8d1";
     const loginEnd = "https://wookieplaytime-0a57.restdb.io/rest/signup";
 
-    let isLoggedin = false;
-
-    /*JS - Changing Profile Link*/
-    function updateProflink() {
-        console.log("updateProflink func called");
-        const profileLink = document.getElementById("profileLink");
-    
-        if (isLoggedin) {
-            profileLink.href = "profile.html";
-        } else {
-            profileLink.href = "signup-login.html";
-        }
-    }
-    
-
-    // Call updateProflink initially
-    updateProflink();
-
     document.getElementById("loginsubmit").addEventListener("click", function (e) {
         e.preventDefault();
 
@@ -112,10 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
             .then((data) => {
                 if (data.length > 0 && data[0].password === userPassword) {
                     console.log("Welcome back!");
-                    isLoggedin = true;
-                    updateProflink();
 
-                    window.location.href = isLoggedin ? "profile.html" : "signup-login.html";
+                    window.location.href = "index.html";
                 } else {
                     console.log("Login unsuccessful. Try again.");
                 }
@@ -124,14 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error("Error", error);
             });
     });
-
-    document.getElementById("profileLink").addEventListener("click", function (e) {
-        if (!isLoggedin) {
-            window.location.href = "signup-login.html";
-        }
-    });
-    
-    
 });
 
 
