@@ -66,6 +66,7 @@
 							width="40px"
 							height="40px"
 							class="profileiconimg"
+							id="profileLink"
 					/></a>
 				</div>
 			</div>
@@ -87,36 +88,41 @@
                                 <hr id="indicator">
                             </div>
 
-                            <!------------Signup Section------------>
+                            <!------------Login Section------------>
                             <form id="LoginForm">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@xyz.com">
+                                    <input type="email" class="form-control" id="loginfloatingEmail" placeholder="name@xyz.com">
                                     <label for="floatingInput">Email address</label>
                                 </div>
                             
                                 <div class="form-floating">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <input type="password" class="form-control" id="loginfloatingPassword" placeholder="Password">
                                     <label for="floatingPassword">Password</label>
                                 </div>
-                                <button type="submit" class="btn">Login!</button>
+                                <button type="submit" class="btn" id="loginsubmit">Login!</button>
                                 <a href="#">Forgot Password</a>
                             </form>
-		                    <!------------End of Signup Section------------>
+		                    <!------------End of Login Section------------>
                         
-                            <!------------Login Section------------>
+                            <!------------Signup Section------------>
                             <form id="SignupForm">
+								<div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingName" placeholder="Amy Lee">
+                                    <label for="floatingInput">Name</label>
+                                </div>
+
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@xyz.com">
+                                    <input type="email" class="form-control" id="signupfloatingEmail" placeholder="name@xyz.com">
                                     <label for="floatingInput">Email address</label>
                                 </div>
                             
                                 <div class="form-floating">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <input type="password" class="form-control" id="signupfloatingPassword" placeholder="Password">
                                     <label for="floatingPassword">Password</label>
                                 </div>
-                                <button type="submit" class="btn">Sign Up!</button>
+                                <button type="submit" class="btn" id="signupsubmit">Sign Up!</button>
                             </form>
-		                    <!------------End of Login Section------------>
+		                    <!------------End of Signup Section------------>
                         </div>
                     </div>
                 </div>

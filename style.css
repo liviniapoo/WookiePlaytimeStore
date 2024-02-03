@@ -34,7 +34,7 @@ body{
 .logo{
     font-family: 'Rubik Puddles', system-ui;
     font-size: 50px;
-    color: #EFE6E1;
+    color: #ffffff;
 }
 
 nav{
@@ -57,7 +57,7 @@ nav ul li{
 
 a{
     text-decoration: none;
-    color: #EFE6E1;
+    color: #ffffff;
 }
 
 .profileiconimg{
@@ -235,12 +235,13 @@ input:focus{
 .form-container{
     background-color: #A87363;
     width: 40vw;
-    height: 30vw;
+    height: 35vw;
     position: relative;
     text-align: center;
     padding: 20px;
     margin: auto;
     overflow: hidden;
+    border-radius: 30px;
 }
 
 .form-container span{
