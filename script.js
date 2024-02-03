@@ -65,55 +65,74 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 /*JS - Login*/
-document.addEventListener("DOMContentLoaded", function(){
-    const APIKEY="65be00693339b174e873c8d1";
-    const loginEnd="https://wookieplaytime-0a57.restdb.io/rest/signup";
+document.addEventListener("DOMContentLoaded", function () {
+    const APIKEY = "65be00693339b174e873c8d1";
+    const loginEnd = "https://wookieplaytime-0a57.restdb.io/rest/signup";
 
-    let isLoggedin=false;
-    document.getElementById("loginsubmit").addEventListener("click", function(e){
+    let isLoggedin = false;
+
+    /*JS - Changing Profile Link*/
+    function updateProflink() {
+        console.log("updateProflink func called");
+        const profileLink = document.getElementById("profileLink");
+    
+        if (isLoggedin) {
+            profileLink.href = "profile.html";
+        } else {
+            profileLink.href = "signup-login.html";
+        }
+    }
+    
+
+    // Call updateProflink initially
+    updateProflink();
+
+    document.getElementById("loginsubmit").addEventListener("click", function (e) {
         e.preventDefault();
 
-        /*getting user info*/
-        let userEmail=document.getElementById("loginfloatingEmail").value;
-        let userPassword=document.getElementById("loginfloatingPassword").value;
+        /*get info*/
+        let userEmail = document.getElementById("loginfloatingEmail").value;
+        let userPassword = document.getElementById("loginfloatingPassword").value;
 
-        /*checking inputs*/
-        if (!userEmail || !userPassword){
+        /*check input*/
+        if (!userEmail || !userPassword) {
             console.log("Please fill in all required fields.");
             return;
         }
 
-        fetch(`${loginEnd}?q={"email":"${userEmail}"}`,{
+        fetch(`${loginEnd}?q={"email":"${userEmail}"}`, {
             method: "GET",
-            headers:{
-                "Content-Type":"application/json",
+            headers: {
+                "Content-Type": "application/json",
                 "x-apikey": APIKEY,
-                "Cache-Control": "no-cache"
-            }
+                "Cache-Control": "no-cache",
+            },
         })
-        .then(response => response.json())
-        .then(data=>{
-            if (data.length>0 && data[0].password === userPassword){
-                console.log("Welcome back!");
-                window.location.href="index.html";
-                isLoggedin=true;
-                updateProflink();
-            } else{
-                console.log("Login unsuccesful. Try again.");
-            }
-        })
-        .catch(error => {
-            console.error("Error", error);
-        });
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.length > 0 && data[0].password === userPassword) {
+                    console.log("Welcome back!");
+                    isLoggedin = true;
+                    updateProflink();
+
+                    window.location.href = isLoggedin ? "profile.html" : "signup-login.html";
+                } else {
+                    console.log("Login unsuccessful. Try again.");
+                }
+            })
+            .catch((error) => {
+                console.error("Error", error);
+            });
     });
-    /*JS - Changing Profile Link*/
-    function updateProflink(){
-        const profileLink=document.getElementById("profileLink");
-    
-        if (isLoggedin){
-            profileLink.href="profile.html";
-        } else{
-            profileLink.href="login.html";
+
+    document.getElementById("profileLink").addEventListener("click", function (e) {
+        if (!isLoggedin) {
+            window.location.href = "signup-login.html";
         }
-    }
+    });
+    
+    
 });
+
+
+
