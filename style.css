@@ -110,6 +110,65 @@ p{
 }
 
 /**************************
+       Footer Styles
+**************************/ 
+.footer{
+    background: #99B1DD;
+    height: 50%;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 2vw  2vw;
+}
+
+.footer p{
+    color: #ffffff;
+}
+
+.footer h3{
+    color: #ffffff;
+    margin-bottom: 1vw;
+}
+
+.footer-col-1,.footer-col-2,.footer-col-3{
+    min-width: 2vw;
+    margin-bottom: 1vw;
+}
+
+
+.footer-col-1{
+    width: 2vw;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+
+.footer-col-2,
+.footer-col-3{
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.footer-col-2 h3,
+.footer-col-3 h3{
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer hr{
+    border: none;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/**************************
     Products Styles
 **************************/ 
 .small-container{
