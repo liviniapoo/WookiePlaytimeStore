@@ -285,6 +285,51 @@ th:last-child{
     text-align: right;
 }
 
+/************************
+    About Page Styles
+************************/ 
+.about-container{
+    padding: 1vw;
+}
+
+.membercontainer{
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 1vw;
+}
+
+.membercontainer.col-2{
+    max-width: 100%;
+    flex: 0 0 46%;
+    padding: 1vw;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.member{
+    max-width: 100%;
+    text-align: center;
+    margin: 1vw;
+}
+
+.member img{
+    width:20vw;
+    height: 27vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-title{
+    padding-left: 1vw;
+    padding-top: 5vw;
+}
+
+.contact-details{
+    padding-left: 1vw
+}
+
 /********************
     SL Page Styles
 ********************/ 
