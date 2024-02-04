@@ -330,6 +330,37 @@ th:last-child{
     padding-left: 1vw
 }
 
+/************************
+    Profile Page Styles
+************************/ 
+.account-title{
+    margin: 1vw;
+}
+
+.profile-container{
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shippingdetails{
+    background: #DBB8B2;
+    border-radius: 2vw;
+}
+
+.shippingdetails h2,
+.shippingdetails h3{
+    padding-left: 1vw;
+}
+
+.history-container{
+    margin: 1vw;
+}
+
+.profilepage-btns{
+    margin: 1vw;
+}
+
 /********************
     SL Page Styles
 ********************/ 
