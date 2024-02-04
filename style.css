@@ -225,6 +225,66 @@ input:focus{
     outline: none;
 }
 
+/**********************
+    Cart Page Styles
+**********************/ 
+.cartpage{
+    margin: 8vw auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cartproducts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    background: #A87363;
+    color: white;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.totalcartprice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalcartprice table{
+    border-top: 3px solid #A87363;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
 /********************
     SL Page Styles
 ********************/ 
