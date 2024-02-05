@@ -1,3 +1,16 @@
+/*JS - Nav Toggle (MQ)*/
+var NavItems = document.getElementById("navitems");
+
+NavItems.style.maxHeight="0vw";
+
+    function navtoggle(){
+        if(NavItems.style.maxHeight=="0vw"){
+            NavItems.style.maxHeight="20vw";
+        } else{
+            NavItems.style.maxHeight="0px";
+        }
+    }
+
 /*JS -  Accnt Toggle*/
 var SignupForm=document.getElementById("SignupForm");
 var LoginForm=document.getElementById("LoginForm");

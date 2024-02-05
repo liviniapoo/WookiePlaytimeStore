@@ -503,3 +503,61 @@ form a{
     transform: translateX(15.5vw);
     transition: transform 1s;
 }
+
+/**************************
+       Mobile Style
+**************************/ 
+.navicon{
+    width: 8vw;
+    margin-left: 2vw;
+    display: none;
+}
+
+/**************************
+       Media Queries
+**************************/ 
+@media only screen and (max-width: 800px){
+    .logo img{
+        width: 12vw;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 20vw;
+        left: 0;
+        background-color: #99B1DD;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 1vw 5vw 1vw 0;
+    }
+
+    nav ul li a{
+        color: #ffffff;
+    }
+
+    .navicon{
+        display: block;
+        cursor: pointer;
+    }
+
+    /*index mobile view*/
+
+    .container{
+        margin: 0;
+    }
+
+    .col-2 img{
+        width: 100%;
+        height: auto;
+    }
+
+}
