@@ -386,7 +386,7 @@ th:last-child{
 
 .member img{
     width:20vw;
-    height: 27vw;
+    height: 47vh;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -517,14 +517,16 @@ form a{
        Media Queries
 **************************/ 
 @media only screen and (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
+    /*Navigation Mobile Style*/
     .logo img{
         width: 12vw;
     }
-
     .logo{
         font-size: 20px;
     }
-
     nav ul{
         position: absolute;
         top: 20vw;
@@ -535,18 +537,49 @@ form a{
         max-height: 50vh;
         transition: max-height 0.5s;
     }
-    
     nav ul li{
         display: block;
         margin: 1vw 5vw 1vw 0;
     }
-
     nav ul li a{
         color: #ffffff;
     }
-
     .navicon{
         display: block;
         cursor: pointer;
+    }
+
+    /*About Mobile Style*/
+    .abouttitle, .membertitle, .contact-title{
+        font-size: 25px;
+    }
+    .about-container h4{
+        font-size: 20px;
+    }
+    .membercontainer{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 1em;
+    }
+    .membercontainer.col-2{
+        flex: 0 0 100%;
+        padding: 0;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+    }
+    .member img{
+        width: 25vw;
+        max-width: 100%;
+        height: 40vh;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .member h3{
+        font-size: 23px;
+        margin-bottom: 0.5em;
+    }
+    .member h4{
+        font-size: 20px;
+        margin-bottom: 1em;
     }
 }
