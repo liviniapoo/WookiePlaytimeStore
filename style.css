@@ -634,4 +634,10 @@ form a{
     .profile-container .col-2{
         padding-bottom: 6vw;
     }
+
+    /*SL Mobile Style*/
+    .form-container{
+        width: 400px;
+        height: auto;
+    }
 }
