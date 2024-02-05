@@ -298,6 +298,14 @@ input:focus{
     outline: none;
 }
 
+.viewmoreopt a{
+    color: #7A5946;
+}
+
+.viewmoreopt a:hover{
+    color: #C9A195;
+}
+
 /**********************
     Cart Page Styles
 **********************/ 
@@ -600,6 +608,22 @@ form a{
         height: 40vh;
         object-fit: scale-down;
     }
+
+     /*Details Mobile Style*/
+     .information-container h1{
+        font-size: 27px;
+        margin-bottom: 2vh;
+     }
+     .information-container h4{
+        font-size: 20px;
+        padding-top: 2vh;
+     }
+     .information-container input{
+        margin-bottom: 2vh;
+     }
+     .information-container h3{
+        margin: 1vh 0;
+     }
 
     /*Cart Mobile Style*/
     .cartpage h1{
