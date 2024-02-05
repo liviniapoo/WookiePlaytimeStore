@@ -9,6 +9,7 @@
 
 body{
     background: radial-gradient(#EFE6E1, #F2EADF);
+    overflow-x: hidden;
 }
 
 /**************************
@@ -183,14 +184,24 @@ ul{
     margin: 100px auto 50px;
 }
 
+.title-container{
+    flex-basis: 50%;
+}
+
 .productspage-title{
     margin: 0;
+}
+
+.filter-container{
+    flex-basis: 40%;
 }
 
 select{
     border: 1px solid #C9A195;
     padding: 5px;
-    margin-left: 10px;
+    width: 15vw;
+    margin-left: auto;
+    display: block;
 }
 
 select:focus{
@@ -224,7 +235,7 @@ h4{
     align-items: center;
     max-width: 100%;
     margin: auto;
-    padding: 0 25px;
+    padding: 1vw 2.5vw;
 }
 
 .carousel-item-container{
@@ -344,6 +355,10 @@ th:last-child{
     text-align: right;
 }
 
+.cartpage .btn{
+    margin: 1vw;
+}
+
 /************************
     About Page Styles
 ************************/ 
@@ -359,18 +374,10 @@ th:last-child{
 }
 
 .membercontainer.col-2{
-    max-width: 100%;
     flex: 0 0 46%;
     padding: 1vw;
     box-sizing: border-box;
-    text-align: center;
     margin: 0 auto;
-}
-
-.member{
-    max-width: 100%;
-    text-align: center;
-    margin: 1vw;
 }
 
 .member img{
