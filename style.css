@@ -600,4 +600,14 @@ form a{
         height: 40vh;
         object-fit: scale-down;
     }
+
+    /*Cart Mobile Style*/
+    .cartpage h1{
+        font-size: 30px;
+    }
+
+    /*Profile Mobile Style*/
+    .profile-container .col-2{
+        padding-bottom: 6vw;
+    }
 }
