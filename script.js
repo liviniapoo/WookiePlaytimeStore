@@ -7,7 +7,7 @@ NavItems.style.maxHeight="0vw";
         if(NavItems.style.maxHeight=="0vw"){
             NavItems.style.maxHeight="20vw";
         } else{
-            NavItems.style.maxHeight="0px";
+            NavItems.style.maxHeight="0vw";
         }
     }
 

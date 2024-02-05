@@ -509,7 +509,7 @@ form a{
 **************************/ 
 .navicon{
     width: 8vw;
-    margin-left: 2vw;
+    margin-left: 1vw;
     display: none;
 }
 
@@ -531,7 +531,8 @@ form a{
         left: 0;
         background-color: #99B1DD;
         width: 100%;
-        overflow: hidden;
+        overflow-y: auto;
+        max-height: 50vh;
         transition: max-height 0.5s;
     }
     
@@ -548,16 +549,4 @@ form a{
         display: block;
         cursor: pointer;
     }
-
-    /*index mobile view*/
-
-    .container{
-        margin: 0;
-    }
-
-    .col-2 img{
-        width: 100%;
-        height: auto;
-    }
-
 }
