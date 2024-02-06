@@ -35,6 +35,7 @@ var LoginForm=document.getElementById("LoginForm");
 /*JS - Accnt Creation*/
 document.addEventListener("DOMContentLoaded", function(){
     const APIKEY="65be00693339b174e873c8d1";
+
     document.getElementById("signupsubmit").addEventListener("click", function(e){
         e.preventDefault();
 
@@ -70,6 +71,10 @@ document.addEventListener("DOMContentLoaded", function(){
             console.log(data);
 
             if (data && data._id){
+                const animation=document.getElementById("lottieAnimationLogin");
+                animation.autoplay=true;
+                animation.load();
+
                 window.location.href="index.html";
             } else{
                 console.log("Signup Failed. Try again.")
@@ -111,6 +116,10 @@ document.addEventListener("DOMContentLoaded", function () {
             .then((data) => {
                 if (data.length > 0 && data[0].password === userPassword) {
                     console.log("Welcome back!");
+
+                    const animation=document.getElementById("lottieAnimationLogin");
+                    animation.autoplay=true;
+                    animation.load();
 
                     window.location.href = "index.html";
                 } else {
