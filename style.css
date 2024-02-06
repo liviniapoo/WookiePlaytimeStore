@@ -359,6 +359,11 @@ td img{
     max-width: 400px;
 }
 
+.cart-points{
+    color: #A87363;
+    font-weight: bold;
+}
+
 td:last-child{
     text-align: right;
 }
