@@ -169,6 +169,10 @@ ul{
     text-align: center;
 }
 
+.footer a:hover{
+    color: #DBB8B2;
+}
+
 /**************************
     Products Styles
 **************************/ 
@@ -484,6 +488,19 @@ th:last-child{
 
 .profilepage-btns{
     margin: 1vw;
+}
+
+.points-container{
+    margin: 5vh 1vw 2vh;
+}
+
+.points-container h4{
+    font-weight: bold;
+}
+
+.points-container p{
+    line-height: 1vw;
+    color: black;
 }
 
 /********************
