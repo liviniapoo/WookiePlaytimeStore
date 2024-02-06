@@ -449,7 +449,7 @@ th:last-child{
 .form-container{
     background-color: #A87363;
     width: 40vw;
-    height: 35vw;
+    height: 55vh;
     position: relative;
     text-align: center;
     padding: 20px;
@@ -460,7 +460,8 @@ th:last-child{
 
 .form-container span{
     font-weight: bold;
-    padding: 0 10px;
+    font-size: 20px;
+    padding: 0   10px;
     color: #ffffff;
     cursor: pointer;
     width: 200px;
@@ -475,7 +476,7 @@ th:last-child{
     width: 40vw;
     padding: 0 20px;
     position: absolute;
-    top: 10vw;
+    top: 7vw;
     transition: transform 1s;
 }
 
@@ -500,16 +501,6 @@ form a{
 
 #LoginForm{
     left: -50vw;
-}
-
-#indicator{
-    width: 17vw;
-    background-color: #F2EADF;
-    border: none;
-    height: 0.5vh;
-    margin-top: 8px;
-    transform: translateX(15.5vw);
-    transition: transform 1s;
 }
 
 /**************************
@@ -636,8 +627,49 @@ form a{
     }
 
     /*SL Mobile Style*/
+    .signuplogin-page{
+        padding-bottom: 4vw;
+    }
+
+    .signuplogin-page .col-2{
+        padding-left: 5px;
+    }
+
     .form-container{
-        width: 400px;
-        height: auto;
+        width: 80vw;
+        height: 70vh;
+        padding: 20px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 30px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .form-container span{
+        font-size: 15px;
+        width: 80px;
+    }
+    
+    .form-btn{
+        display: inline-block;
+    }
+    
+    .form-container form{
+        width: 78vw;
+        height: 20px;
+        padding: 10px 20px;
+        position: absolute;
+        top: 10vw;
+        left: 0;
+        transition: transform 1s;
+    }
+
+    #SignupForm{
+        left: 0;
+    }
+    
+    #LoginForm{
+        left: -77vw;
     }
 }
