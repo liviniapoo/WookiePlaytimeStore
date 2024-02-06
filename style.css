@@ -310,7 +310,11 @@ input:focus{
     Cart Page Styles
 **********************/ 
 .cartpage{
-    margin: 8vw auto;
+    margin: 2vw auto;
+}
+
+.cartpage h1{
+    padding-left: 1vw;
 }
 
 table{
@@ -374,6 +378,44 @@ th:last-child{
 
 .cartpage .btn{
     margin: 1vw;
+}
+
+.freeshipping-reminder {
+    display: none;
+    position: fixed;
+    top: 21vh;
+    right: 1.5vw;
+    margin-left: 2vw;
+    width: 250px;
+}
+
+.reminder-header {
+    padding: 1.5vw 1.5vw;
+    background: #7A5946;
+    color: white;
+}
+
+.reminder-header h3{
+    font-size: 25px;
+}
+
+.reminder-container{
+    padding: 1.5vw;
+    background-color: #7A5946;
+    color: #ffffff;
+}
+
+.reminder-container h4{
+    font-size: 20px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0.5vw;
+    right: 1.5vw;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 /************************

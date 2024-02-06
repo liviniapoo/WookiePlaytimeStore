@@ -129,7 +129,17 @@
 				</tr>
 			</table>
 		</div>
-		<a href="#" class="btn">Checkout</a>
+		<a href="#" class="btn" onclick="openReminder()">Checkout</a>
+
+		<div class="freeshipping-reminder" id="freeshipping-reminder">
+			<div class="reminder-header">
+				<h3>Hey!</h3>
+			</div>
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+			<div class="reminder-container">
+			  <h4>If you spend $*** more, you'll be eligible for free shipping!	</h4>
+			</div>
+		</div>
 	</div>
 	<!------------End of Header Section------------>
 

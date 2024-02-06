@@ -11,6 +11,16 @@ NavItems.style.maxHeight="0vw";
         }
     }
 
+/*JS - Free Shipping Reminder*/
+function openReminder(){
+    var reminder = document.getElementById("freeshipping-reminder");
+        if (reminder.style.display==="none" || reminder.style.display ===""){
+            reminder.style.display = "block";
+        } else {
+            reminder.style.display = "none";
+        }
+}
+
 /*JS -  Accnt Toggle*/
 var SignupForm=document.getElementById("SignupForm");
 var LoginForm=document.getElementById("LoginForm");
