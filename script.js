@@ -179,11 +179,144 @@ function checkLoginCart(){
 let cartIcon = document.querySelector(".cart-icon");
 let closeCart = document.querySelector(".closecartbtn");
 let pageBody = document.querySelector('body');
+let productListHTML = document.querySelector('.productlist');
+let cartListHTML = document.querySelector('.cartlist');
+
+let productList = [];
+let cart = [];
 
 cartIcon.addEventListener('click', () =>{
     pageBody.classList.toggle('showcart')
 })
-
 closeCart.addEventListener('click', ()=>{
     pageBody.classList.toggle('showcart')
 })
+
+const addDataToHTML = () =>{
+    productListHTML.innerHTML = '';
+    if (productList.length>0){
+        productList.forEach(product =>{
+            let newProduct = document.createElement('div');
+            newProduct.classList.add('item');
+            newProduct.dataset.id = product.id;
+            newProduct.innerHTML = `
+                <img src="${product.image}" alt="">
+				<h2>${product.name}</h2>
+				<div class="price">$${product.price}</div>
+				<button class="addCart">
+					Add to Cart
+				</button>
+            `;
+            productListHTML.appendChild(newProduct);
+        })
+    }
+}
+
+productListHTML.addEventListener('click', (event) =>{
+    let positionClick = event.target;
+    if (positionClick.classList.contains('addCart')){
+        let product_id = positionClick.parentElement.dataset.id;
+        addToCart(product_id);
+    }
+})
+
+const addToCart = (product_id) => {
+    let productPositionInCart = cart.findIndex((value) => value.product_id == product_id);
+    if (cart.length <= 0){
+        cart = [{
+            product_id: product_id,
+            quantity: 1
+        }]
+    } else if(productPositionInCart < 0){
+        cart.push({
+            product_id: product_id,
+            quantity: 1
+        });
+    } else{
+        cart[productPositionInCart].quantity = cart[productPositionInCart].quantity + 1;
+    }
+    addCartToHTML();
+    addCartToMemory();
+}
+
+const addCartToMemory = () => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+const addCartToHTML = () => {
+    cartListHTML.innerHTML = '';
+    if (cart.length > 0){
+        cart.forEach(cart => {
+            let newCart = document.createElement('div');
+            newCart.classList.add('item');
+            newCart.dataset.id = cart.product_id;
+            let productPosition = productList.findIndex((value) => value.id == cart.product_id);
+            let info = productList[productPosition];
+            newCart.innerHTML = `
+                <div class="itemimg">
+					<img src="${info.image}" alt="Kookie Plushie">
+				</div>
+				<div class="itemname">
+                    ${info.name}
+				</div>
+				<div class="totalprice">
+                    $${info.price*cart.quantity}
+				</div>
+				<div class="quantity">
+					<span class="minus">-</span>
+					<span>${cart.quantity}</span>
+					<span class="plus">+</span>
+				</div>
+            `;
+        cartListHTML.appendChild(newCart);
+        })
+    }
+}
+
+cartListHTML.addEventListener('click', (event) => {
+    let clickPosition = event.target;
+    if(clickPosition.classList.contains('minus') || clickPosition.classList.contains('plus')){
+        let product_id = clickPosition.parentElement.parentElement.dataset.id;
+        let type = 'minus';
+        if(clickPosition.classList.contains('plus')){
+            type = 'plus';
+        }
+        changeQuantity(product_id, type);
+    }
+})
+
+const changeQuantity = (product_id,type) => {
+    let itemPositionInCart = cart.findIndex((value)=>value.product_id==product_id);
+    if (itemPositionInCart >= 0){
+        switch (type){
+            case 'plus':
+                cart[itemPositionInCart].quantity=cart[itemPositionInCart].quantity+1;
+                break;
+            default:
+                let valueChange=cart[itemPositionInCart].quantity-1;
+                if (valueChange >0){
+                    cart[itemPositionInCart].quantity = valueChange;
+                }else{
+                    cart.splice(itemPositionInCart,1);
+                }
+                break;
+
+        }
+    }
+    addCartToMemory();
+    addCartToHTML();
+}
+
+const initApp = () =>{
+    fetch('products.json')
+    .then(response => response.json())
+    .then(data =>{
+        productList = data;
+        addDataToHTML();
+        if(localStorage.getItem('cart')){
+            cart=JSON.parse(localStorage.getItem('cart'));
+            addCartToHTML();
+        }
+    })
+}
+initApp();
