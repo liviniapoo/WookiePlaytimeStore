@@ -127,6 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (data.length > 0 && data[0].password === userPassword) {
                     console.log("Welcome back!");
 
+                    /*token generation*/
+                    const generatedToken="userToken";
+                    localStorage.setItem("token", generatedToken)
+
+                    /*lottie animation*/
                     const animation=document.getElementById("lottieAnimationLogin");
                     animation.autoplay=true;
                     animation.load();
@@ -142,5 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/*JS - Logout*/
+function logout(){
+    var logoutAction = document.getElementById("logoutBtn");
+}
 
 
