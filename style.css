@@ -190,7 +190,7 @@ ul{
 }
 
 .browsing-container{
-    width: 900px;
+    width: 100%;
     max-width: 90vw;
     margin: auto;
     text-align: center;
@@ -222,6 +222,7 @@ ul{
 .productlist .item h2{
     font-weight: 500;
     font-size: large;
+    padding-top: 10px;
 }
 
 .productlist .item .price{
