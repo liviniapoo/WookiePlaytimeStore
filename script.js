@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         /*check input*/
         if (!userEmail || !userPassword) {
-            console.log("Please fill in all required fields.");
+            alert("Please fill in all required fields.");
             return;
         }
 
@@ -127,9 +127,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (data.length > 0 && data[0].password === userPassword) {
                     console.log("Welcome back!");
 
-                    /*token generation*/
+                    /*token generation
                     const generatedToken="userToken";
-                    localStorage.setItem("token", generatedToken)
+                    localStorage.setItem("token", generatedToken)*/
 
                     /*lottie animation*/
                     const animation=document.getElementById("lottieAnimationLogin");
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     window.location.href = "index.html";
                 } else {
-                    console.log("Login unsuccessful. Try again.");
+                    alert("This user doesn't exist");
                 }
             })
             .catch((error) => {
@@ -147,14 +147,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-/*JS - Logout*/
+/*JS - Logout
 function logout(){
     localStorage.removeItem("token");
 
     window.location.href="signup-login.html";
 }
+*/
 
-/*JS - Checking Login*/
+/*JS - Checking Login
 function checkLoginProfile(){
     const token=localStorage.getItem("token");
     if (token){
@@ -172,5 +173,17 @@ function checkLoginCart(){
         window.location.href="signup-login.html";
     }
 }
+*/
 
+/*JS - Cart*/
+let cartIcon = document.querySelector(".cart-icon");
+let closeCart = document.querySelector(".closecartbtn");
+let pageBody = document.querySelector('body');
 
+cartIcon.addEventListener('click', () =>{
+    pageBody.classList.toggle('showcart')
+})
+
+closeCart.addEventListener('click', ()=>{
+    pageBody.classList.toggle('showcart')
+})

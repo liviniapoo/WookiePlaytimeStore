@@ -63,9 +63,6 @@
 							<li>
 								<a href="about.html">About</a>
 							</li>
-        	                <li>
-        	                    <a href="cart.html" onclick="checkLoginCart()">Cart</a>
-        	                </li>
 						</ul>
 					</nav>
 					<a href="profile.html"
@@ -74,7 +71,6 @@
 						width="40px"
 						height="40px"
 						class="profileiconimg"
-						onclick="checkLoginProfile()"
 					/></a>
 					<img src="images/menuicon.png" class="navicon" onclick="navtoggle()">
 				</div>
@@ -82,55 +78,58 @@
 		</section>
 		<!------------End of Header Section------------>
 		
-		<!------------Products Section------------>
-		<div class="small-container">
-			<div class="row row-2">
-				<div class="title-container">
-					<h2 class="productspage-title">Our Store</h2>
+		<body class="">
+			<!------------Products Section------------>
+			<div class="browsing-container">
+				<header class="browse-header">
+					<div class="browsing-title">Our Store</div>
+					<div class="cart-icon">
+						<img src="images/cart icon.png">
+					</div>
+				</header>
+
+				<div class="productlist">
+					<div class="item">
+						<img src="images/kookie_fv.png" alt="Kookie Plushie">
+						<h2>Kookie Plushie</h2>
+						<div class="price">$15.99</div>
+						<button class="addCart">
+							Add to Cart
+						</button>
+					</div>
 				</div>
-				<div class="filter-container">
-					<select>
-						<option>Show All</option>
-						<option>Sort by Price</option>
-					</select>
+			</div>
+			<!------------End of Products Section------------>
+
+			<!------------Cart Tab Section------------>
+			<div class="carttab">
+				<h1>Your Cart</h1>
+				<div class="cartlist">
+					<div class="item">
+						<div class="itemimg">
+							<img src="images/kookie_fv.png" alt="Kookie Plushie">
+						</div>
+						<div class="itemname">
+							Kookie Plushie
+						</div>
+						<div class="totalprice">
+							$15.99
+						</div>
+						<div class="quantity">
+							<span class="minus">-</span>
+							<span>1</span>
+							<span class="plus">+</span>
+						</div>
+					</div>
+				</div>
+				<div class="closecart">
+					<button class="closecartbtn">Close Cart</button>
+					<button class="checkout">Check Out</button>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-4">
-					<a href="slothtoydetails.html">
-						<img src="images/kookie_fv.png">
-					</a>
-					<h4>Kookie Plushie</h4>
-					<p>$15.99</p>
-				</div>
-
-				<div class="col-4">
-					<a href="bunnytoydetails.html">
-						<img src="images/windy_fv.png">
-					</a>
-					<h4>Windy Plushie</h4>
-					<p>$15.99</p>
-				</div>
-
-				<div class="col-4">
-					<a href="slothstickersdetails.html">
-						<img src="cute viper (logo placeholder).jpg">
-					</a>
-					<h4>Kookie Sticker Pack</h4>
-					<p>$5.00</p>
-				</div>
-
-				<div class="col-4">
-					<a href="bunnystickerdetails.html">
-						<img src="cute viper (logo placeholder).jpg">
-					</a>
-					<h4>Windy Sticker Pack</h4>
-					<p>$5.00</p>
-				</div>
-			</div>
-		</div>
-		<!------------End of Products Section------------>
+			<!------------End of Cart Tab Section------------>
+		</body>
 
 		<!------------Footer Section------------>
 		<section class="footer">
