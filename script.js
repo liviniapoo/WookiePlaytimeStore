@@ -154,4 +154,23 @@ function logout(){
     window.location.href="signup-login.html";
 }
 
+/*JS - Checking Login*/
+function checkLoginProfile(){
+    const token=localStorage.getItem("token");
+    if (token){
+        window.location.href="profile.html";
+    } else{
+        window.location.href="signup-login.html";
+    }
+}
+
+function checkLoginCart(){
+    const token=localStorage.getItem("token");
+    if (token){
+        window.location.href="cart.html";
+    } else{
+        window.location.href="signup-login.html";
+    }
+}
+
 
