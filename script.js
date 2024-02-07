@@ -149,7 +149,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*JS - Logout*/
 function logout(){
-    var logoutAction = document.getElementById("logoutBtn");
+    localStorage.removeItem("token");
+
+    window.location.href="signup-login.html";
 }
 
 
