@@ -1,0 +1,38 @@
+ [
+    {
+        "id": 1,
+        "name": "Kookie Plushie",
+        "price": 15.99,
+        "image": "images/kookie_fv.png"
+    },
+    {
+        "id": 2,
+        "name": "Windy Plushie",
+        "price": 15.99,
+        "image": "images/windy_fv.png"
+    },
+    {
+        "id": 3,
+        "name": "Kookie Sticker Pack",
+        "price": 5.00,
+        "image": "cute viper (logo placeholder).jpg"
+    },
+    {
+        "id": 1,
+        "name": "Windy Sticker Pack",
+        "price": 5.00,
+        "image": "cute viper (logo placeholder).jpg"
+    },
+    {
+        "id": 1,
+        "name": "Kookie Mug",
+        "price": 12.00,
+        "image": "cute viper (logo placeholder).jpg"
+    },
+    {
+        "id": 1,
+        "name": "Windy Mug",
+        "price": 12.00,
+        "image": "cute viper (logo placeholder).jpg"
+    }
+ ]
