@@ -97,6 +97,11 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 /*JS - Login*/
+function setCookie(){
+    Cookies.set("isloggedin","true", {expires: 2});
+    console.log("cookie set");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const APIKEY = "65be00693339b174e873c8d1";
     const loginEnd = "https://wookieplaytime-0a57.restdb.io/rest/signup";
@@ -126,15 +131,12 @@ document.addEventListener("DOMContentLoaded", function () {
             .then((data) => {
                 if (data.length > 0 && data[0].password === userPassword) {
                     console.log("Welcome back!");
+                    setCookie();
 
-                    /*token generation
-                    const generatedToken="userToken";
-                    localStorage.setItem("token", generatedToken)*/
-
-                    /*lottie animation*/
+                    /*lottie animation
                     const animation=document.getElementById("lottieAnimationLogin");
                     animation.autoplay=true;
-                    animation.load();
+                    animation.load();*/
 
                     window.location.href = "index.html";
                 } else {
@@ -147,33 +149,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-/*JS - Logout
-function logout(){
-    localStorage.removeItem("token");
 
-    window.location.href="signup-login.html";
-}
-*/
-
-/*JS - Checking Login
+/*JS - Checking Login*/
 function checkLoginProfile(){
-    const token=localStorage.getItem("token");
-    if (token){
+    var cookiestatus = Cookies.get("isloggedin");
+    if (cookiestatus){
         window.location.href="profile.html";
     } else{
         window.location.href="signup-login.html";
     }
 }
 
-function checkLoginCart(){
-    const token=localStorage.getItem("token");
-    if (token){
-        window.location.href="cart.html";
-    } else{
-        window.location.href="signup-login.html";
-    }
-}
-*/
+
 
 /*JS - Cart*/
 let cartIcon = document.querySelector(".cart-icon");
