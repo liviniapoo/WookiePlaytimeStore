@@ -405,8 +405,22 @@ body.showcart .carttab .browsing-container{
     padding-left: 20px;
 }
 
+.information-container h1{
+    font-family: 'Unkempt', cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.information-container h4{
+    font-family: 'Unkempt', cursive;
+    font-size: 29px;
+}
+
 .information-container h3{
     margin: 20px 0;
+    font-family: 'Unkempt', cursive;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .information-container input{
@@ -419,8 +433,9 @@ body.showcart .carttab .browsing-container{
 }
 
 .information-container p{
+    font-family: 'Unkempt', cursive;
     color: #7A5946;
-    font-size: large;
+    font-size: 25px;
     font-weight: bold;
 }
 .related-header{
@@ -432,12 +447,18 @@ body.showcart .carttab .browsing-container{
 
 .related-title{
     margin: 0;
-    font-weight: normal;
-    font-size: 39px;
+    font-family: 'Twinkle Star', cursive;
+    font-weight: bold;
+    font-size: 50px; 
+    color: #685044;
 }
 
 .related-header a{
     color: #A87363;
+    font-family: 'Twinkle Star', cursive;
+    color: #685044;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .related-header a:hover{
@@ -472,18 +493,24 @@ body.showcart .carttab .browsing-container{
 }
 
 .relatedproductlist .item h2{
-    font-weight: 500;
-    font-size: large;
     padding-top: 10px;
+    font-weight: bold;
+    font-size: larger;
+    color: #685044;
+    font-family: 'Unkempt', cursive;
 }
 
 .relatedproductlist .item .price{
     letter-spacing: 3px;
-    font-size: small;
+    font-size: large;
+    color: #685044;
+    font-family: 'Unkempt', cursive;
 }
 
 .relatedproductlist .item button{
     background-color: #A87363;
+    font-family: 'Twinkle Star', cursive;
+    font-size: 20px;
     color: #F2EADF;
     padding: 5px 10px;
     border-radius: 20px;
@@ -497,55 +524,6 @@ body.showcart .carttab .browsing-container{
 *****************************/ 
 .product-image{
     width: 50%;
-}
-
-/**********************
-    Cart Page Styles
-**********************/ 
-.cartpage{
-    margin: 2vw auto;
-}
-
-.cartpage h1{
-    padding-left: 1vw;
-}
-
-.freeshipping-reminder {
-    display: none;
-    position: fixed;
-    top: 21vh;
-    right: 1.5vw;
-    margin-left: 2vw;
-    width: 250px;
-}
-
-.reminder-header {
-    padding: 1.5vw 1.5vw;
-    background: #7A5946;
-    color: white;
-}
-
-.reminder-header h3{
-    font-size: 25px;
-}
-
-.reminder-container{
-    padding: 1.5vw;
-    background-color: #7A5946;
-    color: #ffffff;
-}
-
-.reminder-container h4{
-    font-size: 20px;
-}
-
-.closebtn {
-    position: absolute;
-    top: 0.5vw;
-    right: 1.5vw;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
 }
 
 /************************
