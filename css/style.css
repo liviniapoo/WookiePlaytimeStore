@@ -698,7 +698,7 @@ body.showcart .carttab .browsing-container{
 .form-container{
     background-color: #A87363;
     width: 40vw;
-    height: 55vh;
+    height: 57vh;
     position: relative;
     text-align: center;
     padding: 20px;
@@ -717,10 +717,6 @@ body.showcart .carttab .browsing-container{
     display: inline-block;
 }
 
-.form-btn{
-    display: inline-block;
-}
-
 .form-container form{
     width: 40vw;
     padding: 0 20px;
@@ -730,10 +726,11 @@ body.showcart .carttab .browsing-container{
 }
 
 form.btn{
+    display: inline-block;
     width: 100%;
     border: none;
     cursor: pointer;
-    margin: 5px 0;
+    margin: 2px 0;
     background-color: #C9A195;
     font-family: 'Twinkle Star', cursive;
     font-size: 30px;
