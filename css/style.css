@@ -708,8 +708,8 @@ body.showcart .carttab .browsing-container{
 }
 
 .form-container span{
-    font-weight: bold;
-    font-size: 20px;
+    font-family: 'Twinkle Star', cursive;
+    font-size: 30px;
     padding: 0   10px;
     color: #ffffff;
     cursor: pointer;
@@ -733,7 +733,10 @@ form.btn{
     width: 100%;
     border: none;
     cursor: pointer;
-    margin: 10px 0;
+    margin: 5px 0;
+    background-color: #C9A195;
+    font-family: 'Twinkle Star', cursive;
+    font-size: 30px;
 }
 
 form.btn:focus{
@@ -741,7 +744,12 @@ form.btn:focus{
 }
 
 form a{
-    padding: 1vw
+    padding: 1vw;
+    font-family: 'Unkempt', cursive;
+}
+
+form a:hover{
+    color: #99B1DD;
 }
 
 #SignupForm{
