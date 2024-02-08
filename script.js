@@ -160,6 +160,11 @@ function checkLoginProfile(){
     }
 }
 
+/*JS - Logout */
+function logout(){
+    Cookies.remove("isloggedin");
+    window.location.href="index.html";
+}
 
 
 /*JS - Cart*/
