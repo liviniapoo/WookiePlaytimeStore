@@ -89,27 +89,37 @@ a{
 }
 
 .col-2 h1{
+    font-family: 'Twinkle Star', cursive;
+    font-weight: bold;
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
+    color: #685044;
 }
 
-p{
-    color: #99B1DD;
+.col-2 p{
+    font-family: 'Unkempt', cursive;
+    font-size: 30px;
+    color: #685044;
 }
 
 .btn{
     display: inline-block;
-    background-color: #C9A195;
-    color: #ffffff;
+    background-color: #DBB8B2;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
     transition: background 0.5s;
+    font-family: 'Twinkle Star', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    color: #F2EADF;
+    cursor: pointer;
 }
 
 .btn:hover{
-    background: #DBB8B2;
+    background: #C9A195;
+    color: #DBB8B2;
 }
 
 /**************************
@@ -588,6 +598,10 @@ body.showcart .carttab .browsing-container{
 ************************/ 
 .account-title{
     text-align: center;
+    font-family: 'Twinkle Star', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #7A5946;
 }
 
 .greeting{
@@ -595,8 +609,9 @@ body.showcart .carttab .browsing-container{
 }
 
 .greeting h1{
-    font-size: 35px;
-    text-decoration: underline;
+    font-family: 'Unkempt', cursive;
+    font-size: 45px;
+    font-weight: bold;
     color: #7A5946;
 }
 
@@ -616,8 +631,19 @@ body.showcart .carttab .browsing-container{
     padding: 1vw;
 }
 
-.shippingdetails h2{
+.shippingdetails h2, .userinformation h2, 
+.history-container h2, .points-container h2{
     text-decoration: underline;
+    font-family: 'Unkempt', cursive;
+    font-size: 37px;
+    color: #7A5946;
+}
+
+.userinformation h3, .shippingdetails h3,
+.history-container h4{
+    font-family: 'Unkempt', cursive;
+    color: #7A5946;
+    font-size: 30px;
 }
 
 .history-container{
@@ -632,13 +658,34 @@ body.showcart .carttab .browsing-container{
     margin: 5vh 1vw 2vh;
 }
 
+.points-container h3, .points-container h4{
+    font-family: 'Unkempt', cursive;
+    color: #7A5946;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .points-container h4{
     font-weight: bold;
 }
 
 .points-container p{
     line-height: 1vw;
-    color: black;
+    font-family: 'Unkempt', cursive;
+    color: #7A5946;
+    font-size: 20px;
+}
+
+.profile-container .btn, .profilepage-btns .btn{
+    background-color: #C9A195;
+    font-family: 'Twinkle Star', cursive;
+    font-size: 22px;
+    color: #F2EADF;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 /********************
