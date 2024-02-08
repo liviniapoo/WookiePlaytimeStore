@@ -556,6 +556,19 @@ body.showcart .carttab .browsing-container{
     color: #685044;
 }
 
+.member h3{
+    font-family: 'Unkempt', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    color: #685044;
+}
+
+.member h4{
+    font-family: 'Unkempt', cursive;
+    font-size: 29px;
+    color: #685044;
+}
+
 .membercontainer{
     max-width: 100%;
     display: flex;
