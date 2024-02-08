@@ -22,20 +22,13 @@
     },
     {
         "id": 4,
-        "name": "Windy Sticker Pack",
-        "price": 5.00,
-        "image": "cute viper (logo placeholder).jpg",
-        "url": "bunnystickerdetails.html"
-    },
-    {
-        "id": 5,
         "name": "Kookie Mug",
         "price": 12.00,
         "image": "images/kookiemug_fv.png",
         "url": "slothmugdetails.html"
     },
     {
-        "id": 6,
+        "id": 5,
         "name": "Windy Mug",
         "price": 12.00,
         "image": "images/windymug_fv.png",
