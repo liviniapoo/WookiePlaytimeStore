@@ -193,8 +193,10 @@ ul{
 
 .browsing-title{
     margin: 0;
-    font-weight: normal;
-    font-size: 50px;
+    font-family: 'Twinkle Star', cursive;
+    font-weight: bold;
+    font-size: 50px; 
+    color: #685044;
 }
 
 .browsing-container{
@@ -209,6 +211,7 @@ ul{
 
 .cart-icon img{
     width: 50px;
+    cursor: pointer;
 }
 
 .productlist{
@@ -228,18 +231,24 @@ ul{
 }
 
 .productlist .item h2{
-    font-weight: 500;
-    font-size: large;
+    font-weight: bold;
+    font-size: larger;
     padding-top: 10px;
+    color: #685044;
+    font-family: 'Unkempt', cursive;
 }
 
 .productlist .item .price{
     letter-spacing: 3px;
-    font-size: small;
+    font-size: large;
+    color: #685044;
+    font-family: 'Unkempt', cursive;
 }
 
 .productlist .item button{
     background-color: #A87363;
+    font-family: 'Twinkle Star', cursive;
+    font-size: 20px;
     color: #F2EADF;
     padding: 5px 10px;
     border-radius: 20px;
@@ -273,7 +282,9 @@ body.showcart .carttab .browsing-container{
 .carttab h1{
     padding: 20px;
     margin: 0;
-    font-weight: 300;
+    font-weight: bold;
+    color: #685044;
+    font-family: 'Twinkle Star', cursive;
 }
 
 .carttab .closecart{
@@ -284,13 +295,19 @@ body.showcart .carttab .browsing-container{
 .carttab .closecart button{
     background-color: #DBB8B2;
     border: none;
-    /*font family*/
-    font-weight: 500;
     cursor: pointer;
+    color: #685044;
+    font-family: 'Unkempt', cursive;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .carttab .closecart .closecartbtn{
     background-color: #C9A195;
+    color: #685044;
+    font-family: 'Unkempt', cursive;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .carttab .cartlist .item img{
@@ -303,6 +320,10 @@ body.showcart .carttab .browsing-container{
     gap: 10px;
     text-align: center;
     align-items: center;
+    color: #685044;
+    font-family: 'Unkempt', cursive;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .cartlist .quantity span{
