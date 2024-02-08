@@ -562,7 +562,17 @@ body.showcart .carttab .browsing-container{
     Profile Page Styles
 ************************/ 
 .account-title{
-    margin: 1vw;
+    text-align: center;
+}
+
+.greeting{
+    padding: 1vw;
+}
+
+.greeting h1{
+    font-size: 35px;
+    text-decoration: underline;
+    color: #7A5946;
 }
 
 .profile-container{
@@ -571,14 +581,18 @@ body.showcart .carttab .browsing-container{
     flex-wrap: wrap;
 }
 
-.shippingdetails{
+.shippingdetails-container{
     background: #DBB8B2;
     border-radius: 2vw;
+    height: 40vh
 }
 
-.shippingdetails h2,
-.shippingdetails h3{
-    padding-left: 1vw;
+.shippingdetails {
+    padding: 1vw;
+}
+
+.shippingdetails h2{
+    text-decoration: underline;
 }
 
 .history-container{
