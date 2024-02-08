@@ -3,14 +3,14 @@
         "id": 1,
         "name": "Kookie Plushie",
         "price": 15.99,
-        "image": "images/kookie_fv.png",
+        "image": "images/kookie_fv_nobg.png",
         "url": "slothtoydetails.html"
     },
     {
         "id": 2,
         "name": "Windy Plushie",
         "price": 15.99,
-        "image": "images/windy_fv.png",
+        "image": "images/windy_fv_nobg.png",
         "url": "bunnytoydetails.html"
     },
     {
