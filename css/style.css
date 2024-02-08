@@ -125,10 +125,14 @@ p{
 
 .footer p{
     color: #ffffff;
+    font-family: 'Single Day', cursive;
+    font-size: 20px;
 }
 
 .footer h3{
     color: #ffffff;
+    font-family: 'Single Day', cursive;
+    font-size: 30px;
     margin-bottom: 1vw;
 }
 
@@ -161,6 +165,8 @@ ul{
     list-style-type: none;
     padding: 0;
     text-align: center;
+    font-family: 'Single Day', cursive;
+    font-size: 20px;
 }
 
 .footer hr{
@@ -528,6 +534,19 @@ body.showcart .carttab .browsing-container{
     padding: 1vw;
 }
 
+.abouttitle, .membertitle{
+    font-family: 'Twinkle Star', cursive;
+    font-weight: bold;
+    font-size: 40px; 
+    color: #685044;
+}
+
+.about-container h4{
+    font-family: 'Unkempt', cursive;
+    font-size: 30px;
+    color: #685044;
+}
+
 .membercontainer{
     max-width: 100%;
     display: flex;
@@ -552,10 +571,17 @@ body.showcart .carttab .browsing-container{
 .contact-title{
     padding-left: 1vw;
     padding-top: 5vw;
+    font-family: 'Twinkle Star', cursive;
+    font-weight: bold;
+    font-size: 40px; 
+    color: #685044;
 }
 
 .contact-details{
-    padding-left: 1vw
+    padding-left: 1vw;
+    font-family: 'Unkempt', cursive;
+    font-size: 30px;
+    color: #685044;
 }
 
 /************************
