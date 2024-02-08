@@ -31,14 +31,14 @@
         "id": 5,
         "name": "Kookie Mug",
         "price": 12.00,
-        "image": "cute viper (logo placeholder).jpg",
+        "image": "images/kookiemug_fv.png",
         "url": "slothmugdetails.html"
     },
     {
         "id": 6,
         "name": "Windy Mug",
         "price": 12.00,
-        "image": "cute viper (logo placeholder).jpg",
+        "image": "images/windymug_fv.png",
         "url": "bunnymugdetails.html"
     }
  ]
