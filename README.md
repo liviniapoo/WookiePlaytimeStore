@@ -72,17 +72,17 @@ Sadly this page is hardcoded as of now due to lack of time and other coding comp
 This page consists of 2 forms that can be toggled back and forth to help users create new accounts, or sign back in to existing accounts. These data are stored in Wookie Playtime's RestDB database. If successful with their login, users will see a small lottie animation as well as a welcome back message before being directed back to the homepage.
 
 ## Technologies Used
-Content: HTML
-Styles: Normalize.css and style.css
-Javascript:
+- Content: HTML
+- Styles: Normalize.css and style.css
+- Javascript:
 1. API and Database Management
 2. Toggling certain screens (e.g. the cart)
 3. Account and Cookie authentication
 4. Lottie Animation
 5. Adding and quantifying items in cart
 6. Displaying certain products
-JSON: Primarily used for storing product data to display
-Libraries: JS-Cookie, Lottie Animations, API Handling
+- JSON: Primarily used for storing product data to display
+- Libraries: JS-Cookie, Lottie Animations, API Handling
 
 ## Research
 We took a lot of inspiration from different websites. For example,  SHEIN for their point system, ToysRUs for ecommerce. We also planned out roughly how we wanted the website to look with low-fi wireframes in Figma but a large portion of the website did not follow these plannings due to change of ideas along the way and whether its possible for US to code it.
@@ -91,10 +91,10 @@ We took a lot of inspiration from different websites. For example,  SHEIN for th
 ![Screenshot of Shein Points](readME_images/Shein_Points.png)
 
 ## Tutorials followed/Credits
-[Great Day Designs on Youtube](https://www.youtube.com/@greatdaydesigns) for HTML/CSS help
-[JS Cart](https://www.youtube.com/watch?v=gXWohFYrI0M) for how to actually add items to cart
-[Creating Cookies](https://www.youtube.com/watch?v=KzG6NtO8qdg) for Cookie creation and management
-[Deleting Cookies](https://www.youtube.com/watch?v=t3Dm3n2EvoY) for Logout function
+- [Great Day Designs on Youtube](https://www.youtube.com/@greatdaydesigns) for HTML/CSS help
+- [JS Cart](https://www.youtube.com/watch?v=gXWohFYrI0M) for how to actually add items to cart
+- [Creating Cookies](https://www.youtube.com/watch?v=KzG6NtO8qdg) for Cookie creation and management
+- [Deleting Cookies](https://www.youtube.com/watch?v=t3Dm3n2EvoY) for Logout function
 
 **No Codes/styles were directly copied and pasted in this website, instead we followed these guides/tutorials for help**
 

@@ -532,8 +532,8 @@ body.showcart .carttab .browsing-container{
 /*****************************
     One Image Page Styles
 *****************************/ 
-.product-image{
-    width: 50%;
+.product-image img{
+    width: 100%;
 }
 
 /************************
