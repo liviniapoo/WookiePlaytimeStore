@@ -389,10 +389,11 @@ body.showcart .carttab .browsing-container{
     border: 1px solid #C9A195;
 }
 
-input:focus{
-    outline: none;
+.information-container p{
+    color: #7A5946;
+    font-size: large;
+    font-weight: bold;
 }
-
 .related-header{
     display: flex;
     align-items: center;
