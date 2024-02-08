@@ -325,7 +325,7 @@ body.showcart .carttab .browsing-container{
 }
 
 /*****************************
-    Sloth Plush Page Styles
+    Carousel Page Styles
 *****************************/ 
 .detail-container{
     display:flex;
@@ -393,12 +393,80 @@ input:focus{
     outline: none;
 }
 
-.viewmoreopt a{
-    color: #7A5946;
+.related-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.viewmoreopt a:hover{
-    color: #C9A195;
+.related-title{
+    margin: 0;
+    font-weight: normal;
+    font-size: 39px;
+}
+
+.related-header a{
+    color: #A87363;
+}
+
+.related-header a:hover{
+    color: #DBB8B2;
+    cursor: pointer;
+}
+
+.small-container{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+    padding-bottom: 15px;
+}
+
+.relatedproductlist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.relatedproductlist .item{
+    background-color: #DBB8B2;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.relatedproductlist .item img{
+    width: 90%;
+}
+
+.relatedproductlist .item h2{
+    font-weight: 500;
+    font-size: large;
+    padding-top: 10px;
+}
+
+.relatedproductlist .item .price{
+    letter-spacing: 3px;
+    font-size: small;
+}
+
+.relatedproductlist .item button{
+    background-color: #A87363;
+    color: #F2EADF;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*****************************
+    One Image Page Styles
+*****************************/ 
+.product-image{
+    width: 50%;
 }
 
 /**********************
