@@ -666,12 +666,12 @@ form a{
     left: -50vw;
 }
 
-#lottieAnimationLogin, #lottieAnimationSignup{
+#lottieAnimationLogin{
     width: 100px;
     height: 100px;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: -35vw;
     transform: translateX(-50%);
     margin-bottom: 1vw;
 }
@@ -838,5 +838,9 @@ form a{
     
     #LoginForm{
         left: -77vw;
+    }
+
+    #lottieAnimationLogin{
+        left: -47vw;
     }
 }

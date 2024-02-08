@@ -11,23 +11,15 @@ NavItems.style.maxHeight="0vw";
         }
     }
 
-/*JS - Free Shipping Reminder*/
-function openReminder(){
-    var reminder = document.getElementById("freeshipping-reminder");
-        if (reminder.style.display==="none" || reminder.style.display ===""){
-            reminder.style.display = "block";
-        } else {
-            reminder.style.display = "none";
-        }
-}
-
 /*JS -  Accnt Toggle*/
 var SignupForm=document.getElementById("SignupForm");
 var LoginForm=document.getElementById("LoginForm");
+var lottieLogin=document.getElementById("lottieAnimationLogin");
 
     function signup(){
         SignupForm.style.transform="translateX(0px)";
         LoginForm.style.transform="translateX(0px)";
+        lottieLogin.style.transform="translateX(0px)";
     }
 
     function login(){
@@ -35,12 +27,25 @@ var LoginForm=document.getElementById("LoginForm");
         if (screenSize<=800){
             SignupForm.style.transform="translateX(77vw)";
             LoginForm.style.transform="translateX(77vw)";
+            lottieLogin.style.transform="translateX(77vw)";
         } else{
             SignupForm.style.transform="translateX(50vw)";
             LoginForm.style.transform="translateX(50vw)";
+            lottieLogin.style.transform="translateX(50vw)";
         }
     }
-    
+
+/*Lottie*/    
+function playAnimation(animationID){
+    var lottieAnimation = document.getElementById(animationID);
+
+    if(lottieAnimation){
+        lottieAnimation.play();
+    } else{
+        console.log("what lottie");
+    }
+
+}
 
 /*JS - Accnt Creation*/
 document.addEventListener("DOMContentLoaded", function(){
@@ -81,10 +86,6 @@ document.addEventListener("DOMContentLoaded", function(){
             console.log(data);
 
             if (data && data._id){
-                const animation=document.getElementById("lottieAnimationLogin");
-                animation.autoplay=true;
-                animation.load();
-
                 window.location.href="index.html";
             } else{
                 console.log("Signup Failed. Try again.")
@@ -99,7 +100,6 @@ document.addEventListener("DOMContentLoaded", function(){
 /*JS - Login*/
 function setCookie(){
     Cookies.set("isloggedin","true", {expires: 2});
-    console.log("cookie set");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -130,14 +130,9 @@ document.addEventListener("DOMContentLoaded", function () {
             .then((response) => response.json())
             .then((data) => {
                 if (data.length > 0 && data[0].password === userPassword) {
-                    console.log("Welcome back!");
+                    alert("Welcome back!");
                     setCookie();
-
-                    /*lottie animation
-                    const animation=document.getElementById("lottieAnimationLogin");
-                    animation.autoplay=true;
-                    animation.load();*/
-
+                    
                     window.location.href = "index.html";
                 } else {
                     alert("This user doesn't exist");
